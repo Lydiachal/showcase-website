@@ -31,4 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Si aucune catégorie spécifiée, afficher tout
         pageTitle.textContent = "Tous les Projets";
     }
+     document.addEventListener("DOMContentLoaded", function () {
+        const video = document.querySelector("video");
+        if (video) {
+            video.play().catch(error => console.log("Autoplay bloqué : ", error));
+        }
+    });
 });
