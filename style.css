@@ -220,6 +220,18 @@ body {
 }
 
 
+.hero-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-image {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
 
 
 
