@@ -31,10 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
         // Si aucune catégorie spécifiée, afficher tout
         pageTitle.textContent = "Tous les Projets";
     }
-     document.addEventListener("DOMContentLoaded", function () {
-        const video = document.querySelector("video");
-        if (video) {
-            video.play().catch(error => console.log("Autoplay bloqué : ", error));
-        }
-    });
+ window.addEventListener('load', function() {
+    var video = document.querySelector("video");
+    if (video) {
+        video.play().then(function() {
+            console.log('Lecture automatique réussie');
+        }).catch(function(error) {
+            console.error('Erreur lors de la lecture automatique :', error);
+        });
+    }
+});
+
 });
