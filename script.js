@@ -31,4 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Si aucune catégorie spécifiée, afficher tout
         pageTitle.textContent = "Tous les Projets";
     }
+ 
+
 });
